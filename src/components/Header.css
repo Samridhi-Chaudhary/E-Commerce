@@ -1,6 +1,7 @@
-body{
-    margin :0px;
+body {
+  margin: 0;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,7 @@ body{
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #695AEA; 
+  color: #695AEA;
 }
 
 .nav-links {
@@ -36,10 +37,11 @@ body{
 }
 
 .icons {
-  display: flex;          /* make children inline in a row */
-  align-items: center;    /* vertically center the icons */
-  gap: 15px;              /* space between icons */
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 .icon {
   cursor: pointer;
   color: black;
@@ -47,7 +49,6 @@ body{
   height: 24px;
 }
 
-/* Cart badge */
 .cart-icon {
   position: relative;
 }
@@ -62,5 +63,107 @@ body{
   padding: 2px 6px;
   font-size: 0.75rem;
   font-weight: bold;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .icons {
+    margin-top: 10px;
+    gap: 10px;
+  }
+}
+
+
+/* Existing styles... keep everything you have, and then add/update below */
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust if your header height is different */
+    right: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  .icons {
+    display: none;
+  }
 }
 
