@@ -1,6 +1,5 @@
-
 import "./Footer.css";
-import {  Twitter, Instagram, Youtube, FacebookIcon, Phone, Mail, MapPin } from "lucide-react";
+import { Twitter, Instagram, Youtube, FacebookIcon, Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -29,7 +28,6 @@ const Footer = () => {
           </ul>
         </div>
 
-   
         <div className="footer-section">
           <h3>Customer Service</h3>
           <ul>
@@ -40,8 +38,8 @@ const Footer = () => {
             <li>FAQ</li>
           </ul>
           <div className="contact-info">
-            <p> <Phone size={15}/> 1-800-SHOPFLOW</p>
-            <p> <Mail size={15}/> help@shopflow.com</p>
+            <p><Phone size={15}/> 1-800-SHOPFLOW</p>
+            <p><Mail size={15}/> help@shopflow.com</p>
             <p><MapPin size={15}/> New York, NY 10001</p>
           </div>
         </div>
@@ -57,7 +55,7 @@ const Footer = () => {
         </div>
 
       </div>
-   
+
       <div className="footer-bottom">
         <p>© 2024 ShopFlow. All rights reserved.</p>
         <div className="bottom-links">

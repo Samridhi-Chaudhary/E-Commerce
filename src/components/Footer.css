@@ -89,3 +89,46 @@
 .footer-bottom span {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h2,
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .footer-section ul li,
+  .contact-info p,
+  .subscribe input,
+  .subscribe button {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+}
