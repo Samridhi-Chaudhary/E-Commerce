@@ -1,0 +1,91 @@
+.footer {
+  background: #6c5ce7;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer-section {
+  flex: 1 1 250px; /* Grow, shrink, minimum width */
+  min-width: 250px; /* ensures content fits comfortably */
+}
+
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section p, 
+.footer-section ul, 
+.footer-section li,
+.footer-section small {
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.subscribe {
+  display: flex;
+  margin: 10px 0;
+}
+
+.subscribe input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  flex: 1;
+}
+
+.subscribe button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ff7f50;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom span {
+  cursor: pointer;
+}
